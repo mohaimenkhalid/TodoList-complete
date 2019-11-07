@@ -5,12 +5,13 @@ import {store} from './store/store'
 import VueRouter from 'vue-router'
 import Master from './components/layouts/Master'
 import routes from './routes'
+import VeeValidate from 'vee-validate';
 
+
+Vue.use(VeeValidate)
 Vue.config.productionTip = false
-window.eventBus = new Vue();
-Vue.use(VueRouter);
-
-
+window.eventBus = new Vue()
+Vue.use(VueRouter)
 
 const router = new VueRouter({
   routes,
@@ -42,10 +43,6 @@ router.beforeEach((to, from, next) => {
       next()
     }
   } 
-
-
-
-
   else {
     next() // make sure to always call next()!
   }

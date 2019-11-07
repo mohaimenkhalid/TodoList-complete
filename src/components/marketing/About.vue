@@ -1,6 +1,6 @@
 <template>
-	<div>
-		About page
+	<div class="page-wrapper">
+	About page
 	</div>
 </template>
 

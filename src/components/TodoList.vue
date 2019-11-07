@@ -108,7 +108,7 @@
 
 <style>
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css");
+
 
 .todo-input{
     width: 100%;
